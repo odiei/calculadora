@@ -18,7 +18,6 @@ body {
   padding: 20px;
   position: relative;
   width: 563px;
-  overflow: scroll;
 }
 
 .top-container {
@@ -35,9 +34,11 @@ body {
   margin-bottom: 20px;
   margin-right: 20px;
   text-align: right;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
-.buttons-container {
+.buttons {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
@@ -66,7 +67,7 @@ body {
   background: #f1a33c;
 }
 
-.button.number-0 {
+.button.number.zero {
   border-radius: 55px;
   grid-column: 1 / span 2;
   justify-content: flex-start;
